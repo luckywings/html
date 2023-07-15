@@ -1,0 +1,12 @@
+body{
+    background-color: burlywood;
+}
+p{
+    text-align: justify;
+    background-color: rgb(212, 202, 202);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+img{
+    border-radius: 300px;
+}
