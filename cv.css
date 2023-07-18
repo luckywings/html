@@ -1,0 +1,37 @@
+.yy{
+    margin-left: 800px;
+    margin-right: 800px;
+}
+.bb{
+    margin-left: 800px;
+    margin-right: 1000px;
+}
+.ps{
+    background-image: url(q.jpg);
+    
+}
+.cb{
+    border-style: solid;
+    border-width: 100px;
+    border-color: white;
+    border-radius: 3px;
+   img{
+    border-radius: 4px;
+   }
+    
+}
+.cx{
+    background-color: dimgrey;
+}
+h1{
+    color: rgb(211, 219, 226);
+}
+h4{
+    color: aliceblue;
+}
+.ui{
+    background-color: cyan;
+}
+img{
+    background-attachment: scroll;
+}
