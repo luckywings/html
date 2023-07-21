@@ -24,4 +24,37 @@ img{
 }
 .v1{
     background-color: brown;
+    margin-top: 50px;
+}
+.c1{
+    margin-top: 50px;
+}
+.z1{
+    margin-left: 100px;
+    margin-right:200px;
+}
+.c2{
+    font-family: 'Dancing Script', cursive;
+   color: brown;
+   margin-top: 50px;
+   
+
+}
+.v4{
+    background-color: lightcoral;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+margin-top: 50px;
+}
+img{
+    border-radius: 10px;
+}
+.b9{
+    background-color: lightcoral;
+}
+u{
+    color: brown;
+}
+hr{
+    color: brown;
 }
