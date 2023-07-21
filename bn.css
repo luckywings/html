@@ -1,8 +1,27 @@
 .a1{
-    background-color: darkorange;
+    background-color: brown
 
 }
 
 img{
     border-radius: 10px;
+}
+.p1{
+    font-family: 'Dancing Script', cursive;
+    color: brown;
+
+}
+.s1{
+    background-image: url(chocolate\ strawberry.jpg) ;
+    background-repeat: no-repeat;
+    
+
+    
+}
+.s2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.v1{
+    background-color: brown;
 }
