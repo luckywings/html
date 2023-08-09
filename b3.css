@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: black
+}
+
+
+.s5
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 50px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #FF0;
+    font-size: 20px;
+    font-family: verdana;
+    letter-spacing: 4px;
+ border-radius: 20px;
+ }
+
+.s5 a:before,
+
+.s5 a:after,
+.s5 span:before, 
+.s5 span:after
+{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FF0;
+    transition: 1s;
+    mix-blend-mode: hue;
+}
+
+
+
+
+
+ .s5 a:before
+{
+    top: -5px;
+    left: -5px
+}
+.s5{
+  font-family: 'Dancing Script', cursive;
+    color: brown;
+
+}
+.s5 a:after
+{
+    top: -5px;
+    right: -5px;
+}
+.s5 span:before
+{
+    bottom: -5px;
+    left: -5px
+}
+.s5 span:after
+{
+    bottom: -5px;
+    right: -5px
+}
+
+.s5 a:hover:before,
+.s5 a:hover:after,
+.s5 a:hover span:before,
+.s5 a:hover span:after
+{
+    width: calc( 180px/2 );
+    height: calc( 50px/2 )
+}
+p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align:center;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container .box {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    object-fit: cover;
+  }
+  .container .box:before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #f0f2f0;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .container .box:after {
+    content: "";
+    opacity: 0.9;
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .container:hover .box:before {
+    top: 0;
+  }
+  .container:hover .box:after {
+    bottom: 0;
+    transition-delay: 0.5s;
+  }
+  .container .box:hover:before {
+    top: -100%;
+  }
+  .container .box:hover:after {
+    bottom: -100%;
+  }
+  
+
+
+.v2{
+    background-image: url(pexels-drew-williams-3568518.jpg);
+    background-repeat: no-repeat ;
+   color: #fcfcfc;
+}
+a:hover { 
+    text-decoration: none
+    
+    
+  }
+  .dedcription-btn {
+    width: 100%;
+    position: relative;
+    display: inline-block; 
+    border-radius: 30px;
+    background-color: #fcfcfc;
+    color: #ffa000;
+    text-align: center;
+    font-size: 18px;
+    padding: 9px 0;
+    transition: all 0.3s;
+    padding-right: 40px;
+    margin: 20px 5px;
+   
+  }
+  .dedcription-btn .btn-icon {
+    background-color: #ffa000;
+    width: 92px;
+    height: 45px;
+    float: right;
+    position: absolute;
+    border-radius: 30px 30px 30px 0;;
+    right: 0px;
+    top: 0px;
+    transition: all 0.3s;
+  }
+  .name-descripeion {
+    position: relative;
+    z-index: 9999;
+    background-color:transparent;
+  }
+  .btn-icon::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 45px solid #fcfcfc;
+    border-right: 40px solid transparent; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .dedcription-btn:hover .btn-icon {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .dedcription-btn:hover .btn-icon::after {
+    display: none;
+    opacity: 0.1;
+  }
+  
+  .dedcription-btn:hover {
+    color: #fff!important;
+    background-color: #f0f2f0;
+  }
+  .heart {
+    background-color: #ff586b!important;
+  }
+  .book {
+    background-color: #00b7c4!important;
+  }
+  .brain {
+    background-color: #8bc34a!important;
+  }
+  .hover1-box {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  
+  .landing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    padding: 0 0.5rem;
+  }
+  
+  .distortion {
+    height: 400px;
+    width: 300px;
+  }
+  
+  .distortion canvas {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro {
+    align-self: center;
+  }
+  
+  .intro h2 {
+    font-size: 3rem;
+  }
+  
+  .intro p {
+    font-size: 1.5rem;
+  }
+ 
+  
+  @media screen and (max-width: 768px) {
+    .landing {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    canvas {
+      width: 370px !important;
+      height: 600px !important;
+      object-fit: contain;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .distortion {
+    height: auto;
+    width: 100%;
+  }
+  }
+
+
+
