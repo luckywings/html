@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+
+}
+
+.container{
+    margin-top: 5%
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Sora:wght@200&display=swap');
+
+
+
+
+   
+ 
+
+
+body{
+    /* background-image: url(papergrid-industries-koramangala-bangalore-stationery-manufacturers-n3ntxude4y.avif); */
+    background-repeat:no-repeat;
+    
+ 
+  
+}
+.z1{
+    margin-left: 100px;
+    margin-right:200px;
+}
+
+
+.subtitle {
+  font-size:5px;
+}
+
+.btn {
+   
+    font-size:14px;
+    text-transform:uppercase;
+    height:50px;
+    vertical-align: middle;
+    line-height: normal;
+    width:15rem;
+    border:5px solid #1929d1;
+    border-radius: 10px;
+    font-family:Allan;
+  /* margin-left: 750px; */
+ 
+}
+
+.btn:active {
+    color:aliceblue;
+    transform: scale(0.99,0.99);
+}
+.two {
+    background: linear-gradient(#04ec4a, #de580a);
+    transition: all 0.4s;
+    transition-timing-function:cubic-bezier(0.5, 3, 0, 1);
+}
+
+.two:hover {
+    background: linear-gradient(#12e5c2, #f3960a);
+    transform: rotatex(20deg) rotateY(20deg);
+}
+
+@media (max-width:500px) {
+    .n1{
+        flex: content;
+    }
+    
+}
