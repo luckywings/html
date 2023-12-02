@@ -1,5 +1,5 @@
 """
-URL configuration for pro project.
+URL configuration for pro1 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -14,21 +14,20 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path
 from app1 import views
 
+
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns = [
     
-    path('accounts/',include('django.contrib,auth.urls')),
     path('admin/', admin.site.urls),
-    path('',views.base,name="base"),
-    path('signup/',views.signup,name="signup"),
-     path('login/',views.user_login,name="user_login"),
-    path('logout/',views.user_logout,name='user_logout'),
-   
-    path('form1/',views.form1,name='form1'),
-    path('form2/',views.base,name='base'),
+    path('',views.home,name="base"),
+    path('add_book',views.upload,name="add"),
+    path('view_book',views.booklist,name="list"),
     
-]
+    ]
+if(settings.DEBUG):
+    urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

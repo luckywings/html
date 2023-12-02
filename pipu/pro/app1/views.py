@@ -2,12 +2,32 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
-from app1 .models import*
+from app1 .models import *
+from app1.form import *
 # Create your views here.
 
 def base(request):
     d=student.objects.all()
     return render(request,'home.html',{'s':d})
+
+def form1(request):
+    form=studentform()
+    if request.method=='POST':
+        form=studentform(request.POST)
+        if (form.is_valid()):
+            form.save()
+            return base(request)
+    return render(request,'form1.html',{'form':form})
+
+def form2(request):
+    form=studentform()
+    if(request.method =="POST"):
+        form=studentform(request.POST)
+        if(form.is_valid()):
+            form.save()
+            return base(request)
+    return render(request,'form2.html')
+       
 
 def base(request):
     return render(request,'base.html')
