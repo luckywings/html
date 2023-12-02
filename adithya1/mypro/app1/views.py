@@ -17,7 +17,7 @@ def intro(request):
 
 def home(request):
     d=student.objects.all()    
-    return render(request,'home.html',{'t':d})
+    return render(request,'home.html',{'s',d})
 
 def form1(request):
     form=studentform()
