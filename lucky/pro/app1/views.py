@@ -1,8 +1,11 @@
+from email.mime import base
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
+from flask import redirect
 from app1 .models import *
+from app1.form import *
 
 
 # Create your views here.
@@ -10,8 +13,8 @@ def page1(request):
     return render(request, "page1.html",{'navbar':'page1'})
 
 
-def page2(request):
-    return render(request, "base1.html",{'navbar':'page2'})
+def base1(request):
+    return render(request, "base1.html",{'navbar':'base1'})
 
 
 def page3(request):
@@ -20,7 +23,7 @@ def page3(request):
 
 def base1(request):
     d=student.objects.all()
-    return render(request,'home.html',{'s':d})
+    return render(request,'base.html',{'s':d})
 
 def form1(request):
     form=studentform()
