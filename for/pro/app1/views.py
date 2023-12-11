@@ -6,7 +6,26 @@ from app1 .models import *
 from app1.form import *
 # Create your views here.
 
+
+def home(request):
+    return render(request, "home.html")
 def base(request):
+    return render(request,"base.html")
+
+
+
+def page1(request):
+    return render(request,"page1.html",{'navbar':'page1'})
+def page2(request):
+    return render(request,"page2.html",{'navbar':'page2'})
+def page3(request):
+    return render(request,"page3.html",{'navbar':'page3'})
+
+
+
+
+
+def base1(request):
     d=student.objects.all()
     return render(request,'home.html',{'s':d})
 
@@ -16,7 +35,7 @@ def form1(request):
         form=studentform(request.POST)
         if (form.is_valid()):
             form.save()
-            return base(request)
+            return base1(request)
     return render(request,'form1.html',{'form':form})
 
 def form2(request):
@@ -25,12 +44,12 @@ def form2(request):
         form=studentform(request.POST)
         if(form.is_valid()):
             form.save()
-            return base(request)
+            return base1(request)
     return render(request,'form2.html')
        
 
-def base(request):
-    return render(request,'base.html')
+def base1(request):
+    return render(request,'base1.html')
 
 
 def signup(request):
@@ -60,7 +79,7 @@ def user_login(request):
         user=authenticate(request,username=username,password=password1)
         if user is not None:
             login(request,user)
-            return redirect(base)
+            return redirect(base1)
         else:
             messages.info(request,'user not exist')
             print('user not exist')
